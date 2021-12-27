@@ -1,0 +1,6 @@
+[submodule "zsh-z"]
+	path = zsh-z
+	url = git@github.com:agkozak/zsh-z.git
+[submodule "prezto-terraform"]
+	path = prezto-terraform
+	url = git@github.com:prezto-contributions/prezto-terraform.git
