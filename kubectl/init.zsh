@@ -4,8 +4,6 @@ fi
 
 source <(kubectl completion zsh)
 
-source "${0:h}/alias.zsh"
-
 if (( ${+_comps[kubectl]} )); then
   kj() { kubectl "$@" -o json | jq; }
   kjx() { kubectl "$@" -o json | fx; }
@@ -15,3 +13,5 @@ if (( ${+_comps[kubectl]} )); then
   compdef kjx=kubectl
   compdef ky=kubectl
 fi
+
+source "${0:h}/alias.zsh"
